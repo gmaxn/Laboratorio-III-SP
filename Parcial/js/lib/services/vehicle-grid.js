@@ -121,7 +121,7 @@ export class VehicleGrid extends Grid {
                         let cuatroXcuatro = [...document.getElementById("isForByFor").getElementsByTagName("option")].filter(o => o.selected === true && o.id === "cuatroXcuatro")[0].value;
                         console.log(brand2, model2, price2, type2, cuatroXcuatro);
                         this.lastId = (this.lastId + 1);
-                        this.Add(new Camioneta(this.lastId, brand2, model2, parseInt(price2), Boolean(cuatroXcuatro)));
+                        this.Add(new Camioneta(this.lastId, brand2, model2, parseInt(price2), (cuatroXcuatro === "true")));
                         let oldGrid2 = document.getElementById("table-wrapper").getElementsByTagName("table")[0];
                         if (oldGrid2 !== null && oldGrid2 !== undefined) {
                             oldGrid2.parentNode.removeChild(oldGrid2);

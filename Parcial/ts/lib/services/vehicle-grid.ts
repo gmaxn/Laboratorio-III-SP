@@ -175,7 +175,7 @@ export class VehicleGrid extends Grid<Vehiculo> {
 
                         this.lastId = (this.lastId +1);
 
-                        this.Add(new Camioneta(this.lastId, brand2, model2, parseInt(price2), Boolean(cuatroXcuatro)));
+                        this.Add(new Camioneta(this.lastId, brand2, model2, parseInt(price2), (cuatroXcuatro === "true")));
 
                         
 
