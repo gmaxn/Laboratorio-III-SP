@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="js/app/program.js"></script>
+
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+
+        <nav class="layout" id="nav-bar">
+          <div id="btn-signin" class="nav-button show-margins">
+            Sign in
+          </div>
+    
+          <div id="btn-login" class="nav-button show-margins">
+            Log in
+          </div>
+
+          <div id="main" class="nav-button show-margins">
+            Run app
+          </div>
+        </nav>
+
+        
+        <div id="loading-spinner-wrapper" hidden>
+          <img src="./img/spinner.svg" id="spinner-png">    
+        </div>
+        
+        <main id="main-screen" class="layout">
+          <div id="person-grid-wrapper" class="show-margins">
+            <div class="layout" id="search-bar">
+              <input type="text" name="" id="search" placeholder="Search your pet here . . .">
+              <div id="new-pet">Add new</div>
+            </div>
+
+            <div class="layout" id="table-wrapper">
+            </div>
+    
+          </div>
+        </main>
+</body>
+</html>

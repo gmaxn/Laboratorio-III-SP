@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.layout {
+    /* nav - main - aside - footer */
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  margin: 2px;
+  padding: 2px;
+}
+
+
+
+
+#main-screen {
+    justify-content: center;
+    background-image: url("./img/background.png");
+}
+
+/****************************************************************/
+
+
+#nav-bar>input {
+    color: whitesmoke;
+    margin-right:30px;
+    padding:5px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#nav-bar {
+
+    justify-content: flex-end;
+    background-color: black;
+}
+
+#nav-bar>.nav-button {
+    color: whitesmoke;
+    margin-right:30px;
+    padding:5px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.nav-button:hover{
+    background-color: rgba(172, 172, 172, 0.349);
+    border-radius: 5px;
+    padding:5px;
+}
+
+#person-grid-wrapper {
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: white;
+    padding:0px;
+    margin:0x;
+    box-sizing: content-box;
+}
+
+
+#person-grid-wrapper>table {
+    font-family: 'Consolas', Courier, monospace;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#person-grid-wrapper>table>thead>tr, th {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding: 2px;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+}
+
+
+#person-grid-wrapper>table>tbody>tr, td {
+    
+    /*border: 1px solid rgb(110, 110, 110);*/
+    padding: 5px;
+    text-align: center;
+}
+#person-grid-wrapper>table>tbody>tr:nth-child(even) {
+    background-color: white;
+}
+#person-grid-wrapper>table>tbody>tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+#person-grid-wrapper>table>tbody>tr:last-child>td:first-child {
+    border-bottom-left-radius: 5px;
+}
+#person-grid-wrapper>table>tbody>tr:last-child>td:last-child {
+    border-bottom-right-radius: 5px;
+}
+#person-grid-wrapper>table>tbody>tr:hover { 
+    background-color: rgb(255, 240, 120);
+}
+
+/************************************************************************************/
+#search-bar {
+
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+}
+#search-bar>input {
+
+    color: black;
+    margin:5px;
+    font-family: 'Permanent Marker', cursive;
+    width:100%;
+    height: 25px;
+    border-radius: 8px;
+
+}
+#new-pet {
+    color: whitesmoke;
+    padding:5px;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    border-style: dashed;
+    width: 25%;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+#new-pet:hover{
+    background-color: rgba(172, 172, 172, 0.349);
+    margin-right:5px;
+    margin-top: 1px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#table-wrapper {
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: white;
+    padding:0px;
+    margin:0x;
+    box-sizing: content-box;
+}
+
+
+#table-wrapper>table {
+    font-family: 'Consolas', Courier, monospace;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#table-wrapper>table>thead>tr, th {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding: 2px;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+}
+
+
+#table-wrapper>table>tbody>tr, td {
+    
+    /*border: 1px solid rgb(110, 110, 110);*/
+    padding: 5px;
+    text-align: center;
+}
+#table-wrapper>table>tbody>tr:nth-child(even) {
+    background-color: white;
+}
+#table-wrapper>table>tbody>tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+#table-wrapper>table>tbody>tr:last-child>td:first-child {
+    border-bottom-left-radius: 5px;
+}
+#table-wrapper>table>tbody>tr:last-child>td:last-child {
+    border-bottom-right-radius: 5px;
+}
+#table-wrapper>table>tbody>tr:hover { 
+    background-color: rgb(255, 240, 120);
+}
+
+/**************************************************************************************/
+
+
+
+.wrapper {
+  margin: 10px;
+  display: inline-flex;
+}
+
+
+
+#loading-spinner-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+}
+
+#spinner-png {
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+/*****************************************/
+
+.input-text-control {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-text-control>label {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   
+}
+.input-text-control>input {
+    font-family: 'Permanent Marker', cursive; 
+    color: black;
+}
+.input-text-control>input[disabled] {
+    color: rgb(108, 117, 125);
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
+}
+.mr-sm-2 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(255, 255, 255); 
+}
+.input-date-control {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-radio-control {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.input-radio-control>.radio-wrapper {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+}
+.input-radio-control>.radio-wrapper>div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+input[type="radio"] {
+    transform: translate(0 , 20%);
+    margin-left: 5px;
+}
+.is-invalid-radio {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+    outline: 1px solid red;
+    
+}
+.is-invalid {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+  
+  @keyframes shake {
+    0% {
+      left: -5px;
+    }
+    100% {
+      right: -5px;
+    }
+  }
+
+
+
+/*****************************************/
+
+#create-form-wrapper {
+    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+    animation:spin 0.5s ease-in;
+/*
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    border: 1px solid blue;*/
+
+
+}
+#create-form {
+
+    float: left;
+    position: sticky;
+    /*animation:spin 0.5s ease-in ; /* spin 0.5s ease-out */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color:rgb(62, 45, 95);
+
+
+    border-radius: 15px;
+    border: 3px solid black;
+    padding: 20px;
+
+}
+
+
+
+@keyframes spin {
+
+    0% {	
+        transform: translate(-50% , -50%) scale(0) rotateZ(360deg); 
+    }
+    100% {	
+        transform: translate(-50% , -50%) scale(1) rotateZ(-360deg); 
+    }
+}
+
+@keyframes rocket {
+
+    0% {	
+        transform: translate(-50% , -50%); 
+    }
+    50% {
+        transform: translate(-50% , -25%);
+    }
+    100% {	
+        transform: translate(-50%, -800%); 
+    }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+
+.create-form-rocket {
+
+    float: left;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    animation: rocket 0.5s ease-out;
+
+}
+
+.form-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    color: rgb(229,229,16);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    /*border: 1px solid black;*/
+}
+.form-label {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+
+
+.form-input-text {
+    padding: 5px;
+    
+}
+
+.btn-group {
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 6%;
+    color: rgb(30, 30, 30);
+}
+
+
+
+.form-buttons {
+
+
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+    

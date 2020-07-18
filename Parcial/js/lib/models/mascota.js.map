@@ -1,0 +1,1 @@
+{"version":3,"file":"mascota.js","sourceRoot":"","sources":["../../../ts/lib/models/mascota.ts"],"names":[],"mappings":"AAGA,MAAe,OAAO;IAQlB,YAAoB,MAAc;QAAd,WAAM,GAAN,MAAM,CAAQ;IAChC,CAAC;IAPH,IAAI,MAAM;QACN,OAAO,IAAI,CAAC,MAAM,CAAC;IACvB,CAAC;IACD,IAAI,MAAM,CAAC,KAAY;QACnB,IAAI,CAAC,MAAM,GAAG,KAAK,CAAC;IACxB,CAAC;CAKJ;AAED,OAAO,EAAE,OAAO,EAAE,CAAC"}
