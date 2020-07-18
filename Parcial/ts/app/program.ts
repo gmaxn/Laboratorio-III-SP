@@ -14,10 +14,10 @@ export default class Program
         Program.initialize();
 
 
-        
     }
 
     static initialize(): void {
+
 
         const vehicleGrid = new VehicleGrid(
             new ColBinder("Id", "_id"),
